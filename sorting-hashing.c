@@ -36,7 +36,7 @@ int main()
 	srand(time(NULL));//난수 초기화
 
 	do{
-        printf("[----- [윤혜준] [2022041021] -----]");
+        printf("[----- [윤혜준] [2022041021] -----]\n");
 		printf("----------------------------------------------------------------\n");
 		printf("                        Sorting & Hashing                       \n");
 		printf("----------------------------------------------------------------\n");
@@ -67,7 +67,7 @@ int main()
 			bubbleSort(array);//버블 정렬하기
 			break;
 		case 'l': case 'L'://l이나 L을 명령으로 받은 경우
-			shellSort(array);//쉘정렬하기
+			shellSort(array);//셸 정렬하기
 			break;
 		case 'k': case 'K'://k나 K를 명령으로 받은 경우
 			printf("Quick Sort: \n");
@@ -233,7 +233,7 @@ int bubbleSort(int *a)//int형 포인터 변수 a 받아서 버블 정렬하기
 	return 0;
 }
 
-int shellSort(int *a)
+int shellSort(int *a)//int형 포인터 변수 a 받아서 셸 정렬하기
 {
 	int i, j, k, h, v;
 
@@ -265,7 +265,7 @@ int shellSort(int *a)
 	return 0;
 }
 
-int quickSort(int *a, int n)
+int quickSort(int *a, int n)//int형 포인터 변수 a랑 int형 변수 n 받아서 퀵 정렬하기
 {
 	int v, t;
 	int i, j;
